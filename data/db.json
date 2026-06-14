@@ -1,0 +1,277 @@
+{
+  "users": [
+    {
+      "id": "usr_patient",
+      "name": "Ali Patient",
+      "email": "patient@doctorhub.test",
+      "role": "patient",
+      "phone": "0300-1111111",
+      "status": "active",
+      "passwordHash": "5a6693b8cef008e26079078900dd78b9:0f04a213beb7fd58e2113b96eae2d73f998230653a009820f7e34df5f1096709",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    },
+    {
+      "id": "usr_doctor_allo",
+      "name": "Dr. Ayesha Khan",
+      "email": "doctor.allo@doctorhub.test",
+      "role": "doctor",
+      "phone": "0300-2222221",
+      "status": "active",
+      "passwordHash": "042e35f36e49aeb6ebd5d329bf177d48:251a748fcdae8335f423cd0326ad4fe0d039e3393bbd733a77c81e25a22a37ff",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    },
+    {
+      "id": "usr_doctor_homeo",
+      "name": "Dr. Hamza Malik",
+      "email": "doctor.homeo@doctorhub.test",
+      "role": "doctor",
+      "phone": "0300-2222222",
+      "status": "active",
+      "passwordHash": "c7b75b2d41d27e50a537ff3ab4576180:bc589c7dab7a93df2aab78dfd7087a8ddbd7ba8c0b716323d53ff0ded49a93da",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    },
+    {
+      "id": "usr_doctor_herbal",
+      "name": "Dr. Sara Javed",
+      "email": "doctor.herbal@doctorhub.test",
+      "role": "doctor",
+      "phone": "0300-2222223",
+      "status": "active",
+      "passwordHash": "d4dd790fe08e59595d34341d5e178138:b64a96f4f24ae7c9b1877457ddb25188c63d628bf3f79b49810c16e07aea6fcd",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    },
+    {
+      "id": "usr_assistant",
+      "name": "Clinic Assistant",
+      "email": "assistant@doctorhub.test",
+      "role": "assistant",
+      "phone": "0300-3333333",
+      "status": "active",
+      "passwordHash": "d30dafa4cd12b1e73a96d305fa773766:0e94a54adbc20bed936ae6fffacb2d9d3ac615cc2fd047f2429606ab202573a8",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    },
+    {
+      "id": "usr_admin",
+      "name": "System Admin",
+      "email": "admin@doctorhub.test",
+      "role": "admin",
+      "phone": "0300-4444444",
+      "status": "active",
+      "passwordHash": "97f6b764e2dc0f2897143787aada0b77:f2847ab6b7ec5b240028427862903f35be6c3a5261ebc805ce5438db60a4f037",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    },
+    {
+      "id": "usr_super",
+      "name": "Super Admin",
+      "email": "superadmin@doctorhub.test",
+      "role": "super_admin",
+      "phone": "0300-5555555",
+      "status": "active",
+      "passwordHash": "f8af1969f8c676d1abd35f3efee7c71a:9a3da50b39781105b3f9c1ae7fae3bbb568a54ab9826d07759959936993c2a1a",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "doc_ayesha",
+      "userId": "usr_doctor_allo",
+      "name": "Dr. Ayesha Khan",
+      "treatmentType": "Allopathic",
+      "specialization": "Cardiology",
+      "diseases": [
+        "heart pain",
+        "blood pressure",
+        "diabetes"
+      ],
+      "fee": 1800,
+      "rating": 4.8,
+      "experienceYears": 9,
+      "assistantId": "usr_assistant",
+      "schedule": [
+        "Monday 05:00 PM - 09:00 PM",
+        "Wednesday 05:00 PM - 09:00 PM",
+        "Saturday 02:00 PM - 06:00 PM"
+      ],
+      "clinicIds": [
+        "cln_central"
+      ]
+    },
+    {
+      "id": "doc_hamza",
+      "userId": "usr_doctor_homeo",
+      "name": "Dr. Hamza Malik",
+      "treatmentType": "Homeopathic",
+      "specialization": "Skin and Allergy",
+      "diseases": [
+        "allergy",
+        "eczema",
+        "migraine"
+      ],
+      "fee": 1200,
+      "rating": 4.6,
+      "experienceYears": 7,
+      "assistantId": "usr_assistant",
+      "schedule": [
+        "Tuesday 04:00 PM - 08:00 PM",
+        "Friday 04:00 PM - 08:00 PM"
+      ],
+      "clinicIds": [
+        "cln_north"
+      ]
+    },
+    {
+      "id": "doc_sara",
+      "userId": "usr_doctor_herbal",
+      "name": "Dr. Sara Javed",
+      "treatmentType": "Herbal",
+      "specialization": "Digestive Health",
+      "diseases": [
+        "stomach pain",
+        "liver weakness",
+        "sleep issues"
+      ],
+      "fee": 1000,
+      "rating": 4.7,
+      "experienceYears": 6,
+      "assistantId": "usr_assistant",
+      "schedule": [
+        "Monday 11:00 AM - 03:00 PM",
+        "Thursday 11:00 AM - 03:00 PM"
+      ],
+      "clinicIds": [
+        "cln_wellness"
+      ]
+    }
+  ],
+  "patients": [
+    {
+      "id": "pat_ali",
+      "userId": "usr_patient",
+      "bloodGroup": "B+",
+      "allergies": "None",
+      "emergencyContact": "0300-9999999"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "apt_seed_1",
+      "patientId": "usr_patient",
+      "doctorId": "doc_ayesha",
+      "clinicId": "cln_central",
+      "date": "2026-06-18",
+      "time": "18:30",
+      "symptoms": "Chest heaviness and high blood pressure",
+      "status": "confirmed",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": "rx_seed_1",
+      "patientId": "usr_patient",
+      "doctorId": "doc_ayesha",
+      "appointmentId": "apt_seed_1",
+      "diagnosis": "Hypertension follow-up",
+      "medicines": "Amlodipine 5mg once daily",
+      "notes": "Return after 2 weeks with BP log.",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    }
+  ],
+  "medical_history": [
+    {
+      "id": "hist_seed_1",
+      "patientId": "usr_patient",
+      "doctorId": "doc_ayesha",
+      "appointmentId": "apt_seed_1",
+      "type": "prescription",
+      "title": "Blood pressure consultation",
+      "diagnosis": "Hypertension follow-up",
+      "notes": "Monitor BP twice daily. Reduce salt intake.",
+      "medicines": "Amlodipine 5mg once daily",
+      "createdBy": "usr_doctor_allo",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_seed_1",
+      "appointmentId": "apt_seed_1",
+      "patientId": "usr_patient",
+      "amount": 1800,
+      "screenshotName": "seed-payment.png",
+      "screenshotData": "",
+      "status": "verified",
+      "verifiedBy": "usr_assistant",
+      "verifiedAt": "2026-06-14T03:30:53.773Z",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    }
+  ],
+  "assistants": [
+    {
+      "id": "ast_seed",
+      "userId": "usr_assistant",
+      "assignedDoctorIds": [
+        "doc_ayesha",
+        "doc_hamza",
+        "doc_sara"
+      ]
+    }
+  ],
+  "clinics": [
+    {
+      "id": "cln_central",
+      "doctorId": "doc_ayesha",
+      "name": "Central Care Clinic",
+      "city": "Lahore",
+      "address": "Main Boulevard, Gulberg",
+      "paymentAccount": "JazzCash 0300-2222221"
+    },
+    {
+      "id": "cln_north",
+      "doctorId": "doc_hamza",
+      "name": "North Homeo Clinic",
+      "city": "Islamabad",
+      "address": "F-8 Markaz",
+      "paymentAccount": "EasyPaisa 0300-2222222"
+    },
+    {
+      "id": "cln_wellness",
+      "doctorId": "doc_sara",
+      "name": "Wellness Herbal Center",
+      "city": "Karachi",
+      "address": "PECHS Block 2",
+      "paymentAccount": "Bank Transfer PK00-DHUB-0001"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_seed_1",
+      "fromUserId": "usr_patient",
+      "toUserId": "usr_doctor_allo",
+      "text": "Doctor, should I bring my previous BP reports?",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    },
+    {
+      "id": "msg_seed_2",
+      "fromUserId": "usr_doctor_allo",
+      "toUserId": "usr_patient",
+      "text": "Yes, please bring the last three readings.",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    }
+  ],
+  "auditLog": [
+    {
+      "id": "aud_seed",
+      "actorId": "system",
+      "action": "database_seeded",
+      "createdAt": "2026-06-14T03:30:53.773Z"
+    },
+    {
+      "id": "aud_8b1726167f5e",
+      "actorId": "usr_patient",
+      "action": "logged_in",
+      "meta": {},
+      "createdAt": "2026-06-14T05:07:08.087Z"
+    }
+  ]
+}
