@@ -1,6 +1,13 @@
-# Doctor Hub
+# Doctor Hub 🏥
+
+[![Live on Vercel](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://doctor-hub-zunarajamshad-collabs-projects.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/zunarajamshad-collab/Doctor-hub)
+
+> 🚀 **Live Demo:** https://doctor-hub-zunarajamshad-collabs-projects.vercel.app
+> 📁 **GitHub:** https://github.com/zunarajamshad-collab/Doctor-hub
 
 Doctor Hub is a final semester healthcare consultation and patient history management project. It includes role-based dashboards for patients, doctors, assistants, admins, and super admins.
+
 
 ## Run
 

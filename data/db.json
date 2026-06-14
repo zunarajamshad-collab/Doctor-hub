@@ -272,6 +272,13 @@
       "action": "logged_in",
       "meta": {},
       "createdAt": "2026-06-14T05:07:08.087Z"
+    },
+    {
+      "id": "aud_b9e9273038fd",
+      "actorId": "usr_doctor_allo",
+      "action": "logged_in",
+      "meta": {},
+      "createdAt": "2026-06-14T06:46:47.367Z"
     }
   ]
 }
