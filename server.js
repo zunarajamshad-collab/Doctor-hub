@@ -759,18 +759,24 @@ async function handleApi(req, res) {
   }
 }
 
-const server = http.createServer(async (req, res) => {
+
+// Main request handler
+async function requestHandler(req, res) {
   await ensureDb();
   if (req.url.startsWith("/api/")) return handleApi(req, res);
   return serveStatic(req, res);
-});
+}
 
-ensureDb().then(() => {
-  if (require.main === module) {
+// Local development
+if (require.main === module) {
+  const server = http.createServer(requestHandler);
+  ensureDb().then(() => {
     server.listen(PORT, () => {
       console.log(`Doctor Hub running at http://localhost:${PORT}`);
     });
-  }
-});
+  });
+}
 
-module.exports = server;
+// Vercel serverless export
+module.exports = requestHandler;
+
